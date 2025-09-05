@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header id="top">
+
+        <div class="hero">
+
+            <div class="image">
+                 <video src="VIDEO-2025-01-22-17-30-04.mp4" autoplay muted></video>
+            </div><!-- .image -->
+            
+            <div class="texte">
+                <h1>andrea</h1>
+                <p>IMD</p>
+            </div><!-- .texte -->
+
+        </div><!-- .hero -->
+
+    </header>
+
+    <nav id="main-menu">
+        <a href="#Video" class="menu-item">Video</a>
+        <a href="#Animation" class="menu-item">Animation</a>
+        <a href="#Charlie" class="menu-item"></a>
+    </nav>
+
+    <main>
+
+        <section id="Alpha" class="scrollspy">
+            <h1>Alpha
+                <a href="#top" class="topNav">↑</a>
+            </h1>
+            <div class="row">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, impedit corrupti obcaecati repudiandae quae voluptas sunt rerum harum veniam quia ducimus quod blanditiis magni deserunt, at culpa aperiam. Architecto, esse!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga provident, officiis dolorum, dolores corporis nulla dolor laudantium quidem quam mollitia necessitatibus eos praesentium commodi sunt consectetur minima? Distinctio, blanditiis?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam numquam ipsum libero, quae amet commodi. Cumque at dolorum temporibus harum, quo architecto voluptatum sint eaque quidem dolores minima, pariatur ullam?</p>
+            </div>
+        </section>
+
+        <section id="Bravo" class="scrollspy">
+            <h1>Bravo
+                <a href="#top" class="topNav">↑</a>
+            </h1>
+
+            <div class="gallery">
+
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                
+            </div><!-- /.gallery -->
+ 
+        </section>
+
+        <section id="Charlie" class="scrollspy">
+            <h1>Charlie
+                <a href="#top" class="topNav">↑</a>
+            </h1>
+        </section>
+ 
+    </main>
+
+<!-- https://github.com/kimyvgy/simple-scrollspy?tab=readme-ov-file#using-simple-scrollspyminjs-file -->
+<!-- https://github.com/kimyvgy/simple-scrollspy/releases/download/v2.5.3/simple-scrollspy.min.js -->
+<script src="simple-scrollspy.min.js"></script>
+<script>
+    window.onload = function () {
+      scrollSpy('#main-menu', {
+        sectionClass: '.scrollspy',
+        menuActiveTarget: '.menu-item',
+        offset:0
+      })
+    }
+  </script>
+
+<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+<script src="lightbox/js/lightbox-plus-jquery.js"></script>
+
+</body>
+</html>
