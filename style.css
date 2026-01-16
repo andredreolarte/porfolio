@@ -25,11 +25,15 @@ h2{
 
  /* - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - COLOR - - - - - - - - - - - - - - - - - - - */
-body { 
-	background-color: rgb(17, 38, 82);
-	color: #FFF;
+html{
+	color-scheme: dark;
 }
-a { color: inherit;}
+body { 
+	background-color: #4e3169;
+	color: white;
+}
+
+a { color: inherit; }
 
 
 
@@ -64,6 +68,9 @@ nav {
  /* - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - MISE EN PAGE - - - - - - - - - - - - - - -  */
 
+body{
+	padding: 0 1rem;
+}
 
 header .hero { 
 	height: calc(100vh - 3rem);
@@ -73,6 +80,7 @@ nav {
 	height: 3rem;
 	justify-content: center;
 }
+
 
 
 
@@ -138,7 +146,9 @@ nav a:hover{
 }
 
 .hero .texte {
-	background-color: #0004;
+	padding:2rem;
+	/* color: #4e3169; */
+	background-color: #0005;
 	z-index: 2;
 }
 
@@ -149,4 +159,43 @@ nav a:hover{
 	gap: 1rem;
 	grid-template-columns: repeat( auto-fill, minmax(min(15rem, 100%), 1fr) );
 	grid-auto-rows: 1fr;
+}
+
+
+
+/* //////////////////////////////// */
+/* Page Projet */
+
+.projectPage{}
+
+.projectPage{
+	background-color: rgb(77, 33, 115);
+}
+
+nav h1 {
+	font-size: 1.3rem
+}
+
+nav.pageNav{ }
+
+
+.projectPage main {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem
+	max-width: 30rem;
+	margin: auto;
+}
+
+
+
+.projectPage p {
+	color: white;
+}
+
+
+.heroImage img {
+	max-height: 80vh;
+	object-fit: contain;
+	
 }
